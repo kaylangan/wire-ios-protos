@@ -13,7 +13,7 @@ checkout:
     - curl -O "${DEPENDENCIES_BASE_URL}/build.sh"
     - curl -O "${DEPENDENCIES_BASE_URL}/test.sh"
     - curl -O "${DEPENDENCIES_BASE_URL}/post_test.sh"
-
+  
 dependencies:
   override:
     - bash dependencies.sh
