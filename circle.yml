@@ -1,9 +1,8 @@
 machine:
   xcode:
-    version: "9.0"
+    version: "8.3.2"
   environment:
-    DEPENDENCIES_BASE_URL: "https://raw.githubusercontent.com/wireapp/wire-ios-shared-resources/xcode9"
-
+    DEPENDENCIES_BASE_URL: "https://raw.githubusercontent.com/wireapp/wire-ios-shared-resources/master"
 checkout:
   post:
     # Download other scripts
@@ -13,7 +12,7 @@ checkout:
     - curl -O "${DEPENDENCIES_BASE_URL}/build.sh"
     - curl -O "${DEPENDENCIES_BASE_URL}/test.sh"
     - curl -O "${DEPENDENCIES_BASE_URL}/post_test.sh"
-  
+
 dependencies:
   override:
     - bash dependencies.sh
