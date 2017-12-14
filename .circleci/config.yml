@@ -35,6 +35,7 @@ jobs:
       
   build:
     <<: *defaults
+    parallelism: 3
     steps:
     - checkout
     - run: *setup_environment
